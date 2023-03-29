@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Romina</title>
+</head>
+<body>
+    <div class="container">
+        <!--ENCABEZADO Y MENÚ-->
+        <header>
+            <h1 class="gradient-text">Romina Acuña</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#CV" onclick="seleccionar()">CV</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div id="icon-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!--SECCIÓN INICIO-->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>Soy Romina Acuña</p>
+                    <h1 class="gradient-text">Diseñadora Web</h1>
+                    <button>Contactame</button>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/perfil1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <!--SECCIÓN CV-->
+        <section id="CV">
+            <h3>CV</h3>
+            <div class="fila">
+                <div class="col">
+                    <p class="experiencia">Experiencia</p>
+                    <h2>Combinando lo mejor en Tecnología, Medios y Comunicación</h2>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>BaytonGroup</h4>
+                            <p>Analista de Marketing y Comunicación (2022- Actualidad)</p>     
+                        </div> 
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Educacional Buenos Aires</h4>
+                            <p>Coordinadora TICs y Docente NTICX (2020- 2021)</p>     
+                        </div> 
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Iglesia Cielos Abiertos</h4>
+                            <p>Responsable de Multimedios (2015- Actualidad)</p>     
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCIÓN CONTACTO-->
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="Linkedin"
+                <a href="#">
+                    <i class="fa-brands fa-linkedin gradient-text"></i>
+                </a>
+            </div>
+            <form action="">
+                <div class="entrada">
+                    <label for="">Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Correo</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="index.js"></script>   
+</body>
+</html>
+
